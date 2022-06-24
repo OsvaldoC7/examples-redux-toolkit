@@ -32,6 +32,9 @@ export default function Todos() {
             { dataOne?.title }
           </p>
         </div>
+        <button onClick={() => setTodo(todo > 1 ? todo - 1 : todo)} className='border px-4 py-2 font-semibold bg-indigo-600 hover:bg-indigo-700 text-gray-200 rounded'>
+          Prev todo
+        </button>
         <button onClick={() => setTodo(todo + 1)} className='border px-4 py-2 font-semibold bg-indigo-600 hover:bg-indigo-700 text-gray-200 rounded'>
           Next todo
         </button>
